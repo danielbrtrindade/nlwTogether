@@ -29,7 +29,7 @@ export class CreateCompliments1624495885469 implements MigrationInterface {
                         type: "varchar"
                     },
                     {
-                        name: "creat_at",
+                        name: "created_at",
                         type: "timestamp",
                         default: "now()"
                     }
@@ -37,7 +37,7 @@ export class CreateCompliments1624495885469 implements MigrationInterface {
                 foreignKeys: [
                     {
                         name: "FKUserSenderCompliments",
-                        referencedTableName: "user",
+                        referencedTableName: "users",
                         referencedColumnNames: ["id"],
                         columnNames: ["user_sender"],
                         onDelete: "SET NULL",
@@ -45,7 +45,7 @@ export class CreateCompliments1624495885469 implements MigrationInterface {
                     },
                     {
                         name: "FKUserReceiverCompliments",
-                        referencedTableName: "user",
+                        referencedTableName: "users",
                         referencedColumnNames: ["id"],
                         columnNames: ["user_receiver"],
                         onDelete: "SET NULL",
@@ -53,7 +53,7 @@ export class CreateCompliments1624495885469 implements MigrationInterface {
                     },
                     {
                         name: "FKUserTagCompliments",
-                        referencedTableName: "tag",
+                        referencedTableName: "tags",
                         referencedColumnNames: ["id"],
                         columnNames: ["tag_id"],
                         onDelete: "SET NULL",
