@@ -21,7 +21,7 @@ class AuthenticateUserService {
             throw new Error("Email/Password incorrect");
         }
 
-        const passwordMatch = compare(password, user.password);
+        const passwordMatch = await compare(password, user.password);
 
         if (!passwordMatch) {
             throw new Error("Email/Password incorrect");
@@ -30,7 +30,7 @@ class AuthenticateUserService {
         const token = sign({
             email: user.email
         },
-            "12321321321321323",
+            "123",
             {
                 subject: user.id,
                 expiresIn: "1d",
