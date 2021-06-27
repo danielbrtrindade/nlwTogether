@@ -16,25 +16,22 @@ Available in next version
 
 ## 📦 Endpoints
 
-- User
-To create users -> POST/users
-To login -> POST/login
-To list users -> GET/users
+- To create users -> POST/users
+- To login -> POST/login
+- To list users -> GET/users
 
-- Tag
-To create tag -> POST/tags
-To list all tags -> GET/tags
+- To create tag -> POST/tags
+- To list all tags -> GET/tags
 
-- Compliments
-To create compliments -> POST/compliments
-To list compliments sent -> GET/compliments/send
-To list compliments receiveds -> GET/compliments/receive
+- To create compliments -> POST/compliments
+- To list compliments sent -> GET/compliments/send
+- To list compliments receiveds -> GET/compliments/receive
 
 ## 🛠️ Build with
 
-NodeJs
-TypeScripit
-TypeOrm
+- NodeJs
+- TypeScripit
+- TypeOrm
 
 ## 📌 Future Features
 
