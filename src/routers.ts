@@ -23,7 +23,7 @@ const listUserController = new ListUserController();
 
 
 router.post("/users", ensureAdmin, createUserController.handle);
-router.post("/tags", createTagController.handle);
+router.post("/tags", ensureAdmin, createTagController.handle);
 router.post("/login", authenticateUserController.handle);
 router.post("/compliments", ensureAuthenticated, createComplimentController.handle);
 
