@@ -10,6 +10,10 @@ Install dependencies with: yarn add or npm i.
 
 Run the server with: yarn dev or npm run dev.
 
+## ⚙️ Documentation with Swagger (New)
+
+- /api-docs
+
 ## ⚙️ Running the tests
 
 Available in next version
