@@ -90,6 +90,9 @@
                     }
                 },
                 "responses": {
+                    "401": {
+                        "description": "Unauthorized"
+                    },
                     "400": {
                         "description": "User already exists"
                     },
@@ -119,6 +122,9 @@
                 ],
                 "parameters": [],
                 "responses": {
+                    "401": {
+                        "description": "Unauthorized"
+                    },
                     "200": {
                         "description": "OK",
                         "content": {
@@ -161,6 +167,9 @@
                     }
                 },
                 "responses": {
+                    "401": {
+                        "description": "Unauthorized"
+                    },
                     "400": {
                         "description": "Tag already exists"
                     },
@@ -190,6 +199,9 @@
                 ],
                 "parameters": [],
                 "responses": {
+                    "401": {
+                        "description": "Unauthorized"
+                    },
                     "200": {
                         "description": "OK",
                         "content": {
